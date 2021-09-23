@@ -21,7 +21,7 @@
 	</a>
 </p>
 <br>
- <img src="https://github.com/devrod/readme-images/blob/master/parallax-screenshot.png?raw=true" width="700" alt="landing page scroll animation">
+
 </div>
 <br>
 
@@ -47,9 +47,6 @@ Showcase web development and design abilities to potential employers and clients
 
 www.rdny.me :zap:
 
-## Author
-
-- Rodney Cumming - RodneyCumming@gmail.com :email:
 
 ## License
 
