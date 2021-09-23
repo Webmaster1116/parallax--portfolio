@@ -47,15 +47,3 @@ Showcase web development and design abilities to potential employers and clients
 
 www.rdny.me :zap:
 
-
-## License
-
-[![License](https://img.shields.io/packagist/l/doctrine/orm.svg)](http://badges.mit-license.org)
-
-- **[MIT license](http://badges.mit-license.org)**
-- Copyright 2018 © <a href="http://fvcproductions.com" target="_blank">Rodney Cumming</a>.
-
-## Acknowledgments
-
-- Inspired by [www.firewatchgame.com](http://www.firewatchgame.com/)
-- Parallax implementation inspired by [Sam Beckham](https://codepen.io/samdbeckham/pen/OPXPNp)
