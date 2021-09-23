@@ -1,0 +1,41 @@
+.heading__container {
+  text-align: center;
+}
+
+.heading__header {
+  color: white;
+  text-align: center;
+  margin-bottom: 45px;
+  font-size: 55px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.heading__para {
+  color: lightgray;
+  line-height: 1.6em;
+  font-weight: normal;
+  font-size: 22px;
+  text-align: center;
+  font-family: "Lato", serif;
+}
+
+.heading__button {
+  border: none;
+  background: #2c5f88;
+  color: white;
+  font-family: "Lato", serif;
+  padding: 10px 100px;
+  border-radius: 5px;
+  margin-top: 40px;
+  transition: background 0.3s;
+}
+
+.heading__button:hover {
+  cursor: pointer;
+  background: #3495d9;
+  transition: background 0.3s;
+}
+
+.heading__link {
+  display: inline;
+}

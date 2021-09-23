@@ -1,0 +1,159 @@
+.nav__outer {
+  width: 3000px;
+  background: #203244;
+  overflow: auto;
+  position: relative;
+  z-index: 7000;
+}
+
+.navContainer {
+  width: 60vw;
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+  z-index: 100;
+  padding: 0;
+}
+
+.nav__logoContainer {
+  display: inline-block;
+}
+
+.nav__logo {
+  height: 60px;
+  padding: 18px;
+}
+
+.nav__rightContainer {
+  float: right;
+  margin-right: -40px;
+}
+
+.nav__rightContainer__link {
+  display: inline-block;
+  margin: 0;
+  padding: 25px 40px;
+
+  font-family: "Lato", serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.nav__rightContainer__link:hover {
+  background: #192835;
+  cursor: pointer;
+}
+
+.nav__active {
+  background: #192835;
+}
+
+.nav__hamburger {
+  padding: 0 40px;
+  line-height: 60px;
+  height: 60px;
+  font-size: 25px;
+  color: white;
+  float: right;
+  display: none;
+}
+
+.nav__hamburger:hover {
+  cursor: pointer;
+}
+
+.nav__closeBtn__wrapper {
+  font-size: 40px;
+  position: absolute;
+  font-family: "Lato", serif;
+  top: 0;
+  line-height: 40px;
+  right: 0;
+  padding: 20px 60px;
+  margin: 0;
+  display: none;
+}
+
+.nav__closeBtn__wrapper:hover {
+  cursor: pointer;
+}
+
+.nav__closeBtn__wrapper:hover path {
+  color: #ee403a;
+}
+
+@media only screen and (max-width: 1050px) {
+  .nav__hamburger {
+    display: inline-block;
+  }
+
+  .nav__linkContainerInner {
+    margin-top: calc(50vh - 230px);
+  }
+
+  .nav__rightContainer {
+    float: none;
+  }
+
+  .nav__rightContainer__link {
+    margin: 0;
+    padding: 25px 40px;
+    font-family: "Lato", serif;
+    font-weight: 600;
+    color: white;
+    z-index: 10000;
+    width: 3000px;
+    position: relative;
+    margin: auto;
+
+    display: block;
+    font-size: 40px;
+    text-align: center;
+    height: 110px;
+  }
+
+  .nav__linkContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 7000;
+    box-sizing: border-box;
+  }
+
+  .nav__link {
+    display: block;
+    font-size: 40px;
+    text-align: center;
+    height: 110px;
+  }
+
+  .nav__link:hover .nav__underline {
+    display: none;
+  }
+
+  .nav__rightContainer__link:hover {
+    background: none;
+    color: #00b7ff;
+  }
+
+  .nav__closeBtn__wrapper {
+    display: block;
+  }
+
+  .nav__hideMobileMenu {
+    display: none;
+  }
+
+  .nav__active {
+    background: none;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .navContainer {
+    width: 80vw;
+  }
+}

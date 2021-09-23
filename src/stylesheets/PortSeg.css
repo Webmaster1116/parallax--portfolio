@@ -1,0 +1,105 @@
+.PortSeg__inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.PortSeg__header {
+  margin-bottom: 25px;
+  color: white;
+  font-size: 36px;
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
+  font-weight: 800;
+}
+
+.PortSeg__para {
+  color: lightgray;
+  line-height: 1.6em;
+  font-weight: normal;
+  font-size: 22px;
+  text-align: left;
+  font-family: "Lato", serif;
+}
+
+.PortSeg__Img {
+  width: 60%;
+  max-width: 300px;
+  position: relative;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+
+.PortSeg__leftPanel {
+  width: 40%;
+  float: left;
+}
+
+.PortSeg__rightPanel {
+  width: 60%;
+  float: left;
+}
+
+.PortSeg__textContainer {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media only screen and (max-width: 1050px) {
+  .rightPic__leftPanel {
+    width: 100%;
+  }
+
+  .rightPic__segment {
+    display: block;
+    text-align: center;
+  }
+
+  .rightPic__textContainer {
+    margin-top: 50px;
+    position: initial;
+    transform: none;
+  }
+
+  .rightPic__Img {
+    width: 100%;
+    max-width: 350px;
+    margin-left: 0%;
+    float: none;
+    height: 40vw;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .PortSeg__inner {
+    justify-content: center;
+  }
+
+  .PortSeg__leftPanel {
+    width: 150px;
+    order: 2;
+    margin: 30px 0 5px;
+  }
+
+  .PortSeg__rightPanel {
+    width: 100%;
+    flex-shrink: 0;
+    order: 1;
+  }
+
+  .PortSeg__Img {
+    width: 150px;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+
+  .PortSeg__header {
+    text-align: center;
+  }
+
+  .PortSeg__para {
+    text-align: center;
+  }
+}

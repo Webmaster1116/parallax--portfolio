@@ -1,0 +1,120 @@
+.parallax {
+  perspective: 100px;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 0;
+  bottom: 0;
+  margin-left: -1500px;
+}
+
+.parallax__overflow {
+  perspective: 100px;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 0;
+  bottom: 0;
+  margin-left: -1500px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.parallax__layer .parallax__img {
+  display: block;
+  position: absolute;
+  bottom: 0;
+}
+
+.parallax__cover {
+  background: #192835;
+  display: block;
+  position: absolute;
+  width: 3000px;
+  top: calc(100% - 2px);
+  left: 0;
+  right: 0;
+  height: 2000px;
+  z-index: 2;
+  width: 3000px;
+}
+
+.parallax__layer__0 {
+  transform: translateZ(-300px) scale(4);
+}
+
+.parallax__layer__1 {
+  transform: translateZ(-250px) scale(3.5);
+}
+
+.parallax__layer__2 {
+  transform: translateZ(-200px) scale(3);
+}
+
+.parallax__layer__3 {
+  transform: translateZ(-150px) scale(2.5);
+}
+
+.parallax__layer__4 {
+  transform: translateZ(-100px) scale(2);
+}
+
+.parallax__layer__5 {
+  transform: translateZ(-50px) scale(1.5);
+}
+
+/* Allow compatibility on IE and Edge without parallax scroll */
+_:-ms-lang(x),
+.parallax__layer__0,
+.parallax__layer__1,
+.parallax__layer__2,
+.parallax__layer__3,
+.parallax__layer__4,
+.parallax__layer__5 {
+  transform: none;
+}
+
+.landingImagesLoading {
+  opacity: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: auto;
+  height: 3000px;
+  width: 3000px;
+  background: #203244;
+  z-index: 1000;
+}
+
+.landingImagesLoaded {
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #203244;
+  height: 3000px;
+  width: 3000px;
+  z-index: 0;
+  transition: all 2s;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(0px, 15px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}

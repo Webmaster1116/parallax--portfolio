@@ -1,0 +1,49 @@
+/* ---- IMPORTS ------- */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,400,500,600,700|Lato:400,500,700");
+
+/* 
+------- FONTS ----------
+font-family: "Montserrat", sans-serif;
+font-family: "Lato", serif;
+*/
+
+.container__outer {
+  padding: 70px 0 130px;
+  overflow: auto;
+}
+
+.container {
+  width: 60vw;
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px 0;
+}
+
+.header {
+  color: white;
+  margin-bottom: 45px;
+  font-size: 36px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.para {
+  color: lightgray;
+  line-height: 1.6em;
+  font-size: 22px;
+  font-family: "Lato", serif;
+}
+
+.lightBG {
+  background: #203344;
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    width: 80vw;
+    padding: 30px 0;
+  }
+
+  .container__outer {
+    padding: 70px 0 70px;
+  }
+}

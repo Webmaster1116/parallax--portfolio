@@ -1,0 +1,113 @@
+.contactSeg__outer {
+  background: #192835;
+  padding: 70px 0 90px;
+}
+
+.contactSegShow {
+  display: block;
+}
+
+.contactSegHide {
+  display: none;
+}
+
+.contactSeg__header {
+  color: white;
+  text-align: center;
+  margin-bottom: 45px;
+  font-size: 36px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contactSeg__para {
+  color: lightgray;
+  line-height: 1.6em;
+  font-weight: normal;
+  font-size: 22px;
+  text-align: center;
+  font-family: "Lato", serif;
+  margin-bottom: 80px;
+}
+
+.contactSeg__iconContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.contactSeg__iconBox {
+  height: 150px;
+  padding: 0 30px;
+}
+
+.contactSeg__iconBox:hover {
+  cursor: pointer;
+}
+
+.contactSeg__iconBox:hover .contactSeg__icon {
+  filter: grayscale(0);
+  transform: scale(1.07);
+  transition: all 0.3s;
+}
+
+.contactSeg__iconBox:hover .contactSeg__iconLabel {
+  color: #aac7f2;
+}
+
+.contactSeg__icon {
+  height: 130px;
+  display: inline-block;
+  transition: all 0.3s;
+  filter: grayscale(0.4);
+  padding: 20px;
+}
+
+.contactSeg__iconLabel {
+  display: inline-block;
+  line-height: 130px;
+  vertical-align: top;
+  font-size: 27px;
+  margin-left: 20px;
+  color: #b4c6df;
+  font-family: "Lato", serif;
+}
+
+@media only screen and (max-width: 1150px) {
+  .contactSeg__icon {
+    height: 80px;
+    display: inline-block;
+    padding: 10px;
+  }
+
+  .contactSeg__iconBox {
+    height: 80px;
+    padding: 0 00px;
+  }
+
+  .contactSeg__iconLabel {
+    line-height: 80px;
+    margin-left: 5px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .contactSeg__icon {
+    width: 133.33px;
+  }
+
+  .contactSeg__iconContainer {
+    display: block;
+    margin-top: -50px;
+  }
+  .contactSeg__iconBox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .contactSeg {
+    padding-bottom: 0;
+  }
+}

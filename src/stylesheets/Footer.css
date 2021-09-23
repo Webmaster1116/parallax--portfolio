@@ -1,0 +1,41 @@
+.footer {
+  text-align: center;
+  background: #15222d;
+  padding: 70px 0 60px;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__logo {
+  height: 54px;
+  padding: 10px;
+  margin: auto;
+  margin-right: 15px;
+}
+
+.footer__logo:hover {
+  cursor: pointer;
+}
+
+.footer__copyright {
+  display: inline-block;
+  line-height: 54px;
+  vertical-align: top;
+  margin-left: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+}
+
+.footer__link {
+  display: inline-block;
+}
+
+@media only screen and (max-width: 700px) {
+  .footer__link {
+    display: block;
+    width: 100%;
+    flex-shrink: 0;
+  }
+}

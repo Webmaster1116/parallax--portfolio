@@ -1,0 +1,134 @@
+.popup {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 30;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.popup__inner {
+  height: 80vh;
+  margin: 10vh 10vw;
+  width: 80vw;
+  top: 0;
+  background: white;
+  border-radius: 5px;
+  box-sizing: border-box;
+  overflow: auto;
+  position: relative;
+  background-image: url("../images/bg.svg");
+  background-position: top center;
+  background-size: cover;
+}
+
+.popup__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  font-size: 24px;
+  color: #6f879b;
+  padding: 15px 25px;
+  font-weight: 600;
+  font-family: arial;
+}
+
+.popup__close:hover {
+  color: #304353;
+  cursor: pointer;
+}
+
+.popup__content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.popup__header {
+  padding: 0 0 40px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  color: #3f71a3;
+  margin: 0;
+}
+
+.popup__subheader {
+  color: #7f9dba;
+  font-family: "Lato", serif;
+  line-height: 1.6em;
+  font-weight: normal;
+  font-size: 22px;
+  text-align: center;
+  margin: 0 100px 40px;
+}
+
+.popup__main {
+  text-align: center;
+  font-family: "Lato", serif;
+  color: #3f71a3;
+  font-size: 70px;
+}
+
+.popup__main__email {
+  text-align: center;
+  font-family: "Lato", serif;
+  color: #3f71a3;
+  font-size: 60px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .popup__main__email {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .popup__main {
+    font-size: 9vw;
+  }
+
+  .popup__main__location {
+    font-size: 7vw;
+  }
+
+  .popup__main__email {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .popup__main__email {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .popup__main__email {
+    font-size: 20px;
+  }
+
+  .port__img__container {
+    width: 100%;
+  }
+
+  .popup__subheader {
+    margin: 0 40px 40px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .popup__main__email {
+    font-size: 15px;
+  }
+
+  .popup__content {
+    position: relative;
+    top: 0;
+    transform: none;
+    margin-top: 60px;
+  }
+}

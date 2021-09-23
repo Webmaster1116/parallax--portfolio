@@ -1,0 +1,94 @@
+/* --------- Header and Para ---------*/
+.skills__header {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.skills__para {
+  text-align: center;
+}
+
+/* --------- Icon Controls ---------*/
+.skills__controls {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 15px 0 0;
+}
+
+.skills__controlsBox {
+  border: 1px solid #4f4f4f;
+  display: inline-block;
+  border-radius: 15px;
+  padding: 5px 14px;
+  margin: 15px 20px 0;
+  transition: border 0.3s;
+}
+
+.skills__controlsBox:hover {
+  border: 1px solid #677f97;
+  cursor: pointer;
+  transition: border 0.3s;
+}
+
+.skills__controlsLabel {
+  margin: 0;
+  font-size: 13px;
+  color: rgb(160, 160, 160);
+  transition: color 0.3s;
+}
+
+.skills__controlsBox:hover .skills__controlsLabel {
+  color: #d3e4ff;
+  transition: color 0.3s;
+}
+
+.skills__active {
+  border: 1px solid #677f97;
+}
+
+.activeSkill .skills__controlsLabel {
+  color: #d3e4ff;
+}
+
+/* --------- Icons ---------*/
+.skills__iconContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills__iconBox {
+  display: inline-block;
+  margin: 40px 20px 0;
+  text-align: center;
+}
+
+.skills__icon {
+  height: 50px;
+}
+
+.skills__iconLabel {
+  color: #91a1b1;
+  margin-top: 7px;
+  text-align: center;
+}
+
+.skills__hideIcon {
+  display: none;
+}
+
+/* --------- Mobile ---------*/
+@media only screen and (max-width: 700px) {
+  .skills__iconContainer {
+    margin-top: 5px;
+  }
+
+  .skills__iconBox {
+    margin: 20px 20px 0;
+  }
+
+  .skills__icon {
+    height: 30px;
+  }
+}

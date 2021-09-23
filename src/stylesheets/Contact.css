@@ -1,0 +1,105 @@
+.parallax__cover__contact {
+  background: #192835;
+  display: block;
+  width: 3000px;
+  margin-top: 62px;
+  position: relative;
+  z-index: 5000;
+}
+
+.contact__header {
+  margin: 0;
+  margin-bottom: 30px;
+  text-align: left;
+  font-size: 30px;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+}
+
+.contact__form {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.contact__name {
+  width: calc(50% - 50px);
+  margin-bottom: 30px;
+  line-height: 40px;
+  padding: 0 15px;
+  margin-right: 100px;
+  box-sizing: border-box;
+}
+
+.contact__email {
+  width: calc(50% - 50px);
+  margin-bottom: 30px;
+  line-height: 40px;
+  padding: 0 15px;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.contact__message {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  line-height: 25px;
+  padding: 10px 15px;
+  resize: none;
+}
+
+.contact__message,
+.contact__email,
+.contact__name {
+  display: inline-block;
+  background: #2a3e53;
+  /* background: none; */
+  outline: none;
+  border: 1px solid #2a3e53;
+  font-weight: 400;
+  border-radius: 5px;
+  font-family: "Lato", serif;
+  color: white;
+}
+
+.contact__message::placeholder,
+.contact__email::placeholder,
+.contact__name::placeholder {
+  color: #72899d;
+  font-weight: 400;
+}
+
+.contact__message:focus,
+.contact__email:focus,
+.contact__name:focus {
+  border: 1px solid #748a9e;
+}
+
+.contact__submit {
+  border: none;
+  background: #2c5f88;
+  color: white;
+  font-family: "Lato", serif;
+  padding: 10px 50px;
+  border-radius: 5px;
+  margin: 0;
+  float: right;
+  transition: background 0.3s;
+}
+
+.contact__submit:hover {
+  cursor: pointer;
+  background: #3495d9;
+  transition: background 0.3s;
+}
+
+@media only screen and (max-width: 1150px) {
+  .contact__name {
+    width: 100%;
+  }
+
+  .contact__email {
+    width: 100%;
+  }
+}
